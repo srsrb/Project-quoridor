@@ -52,7 +52,7 @@ La stratégie Half effectue un tour sur deux un déplacement, puis pose un mur. 
 
 La stratégie MiniMax utilise l'algorithme MiniMax pour choisir son prochain coup. Le joueur utilise cet algorithme pour minimiser la perte maximum. Il fabrique un arbre de coups successifs et assigne à leurs feuilles une valeur en fonction de ces coups. Pour des raisons de temps de calcul, nous utiliserons un arbre de profondeur 2. Pour éviter de parcourir tout l'arbre, nous avons implémenté l'élagage alpha-bêta.
 
-![Arbre MiniMax](arbreminimax.png "Arbre MiniMax")
+![Arbre MiniMax](docs/arbreminimax.png "Arbre MiniMax")
 
 On peut observer sur la figure ci-dessus l'arbre utilisé dans notre stratégie.
 
@@ -65,7 +65,7 @@ Dans le cas d'une égalité entre n1 et n2, nous prenons le noeud pour lequel la
 
 ## Description des résultats
 
-![Tableau Résultats](tabresultat.png "Tableau Résultats")
+![Tableau Résultats](docs/tabresultat.png "Tableau Résultats")
 
 Le tableau ci-dessus illustre les différentes confrontations entre nos stratégies. Les valeurs sont les taux de victoires pour les stratégies présentes dans la première colonne contre celles présentes dans la première ligne. On peut observer que la stratégie Random possède un taux de victoire quasi nul contre les stratégies EarlyWall et MiniMax ce qui semble logique. EarlyWall et Half sont deux stratégies qui sont équivalentes l'une contre l'autre. Tout dépends de qui commencera en premier et que jouera le joueur de la stratégie Half en premier. On peut aussi observer que la stratégie MiniMax semble être bien meilleure que toute les autres. En ce qui concerne leurs affrontement contre elles même :
 
